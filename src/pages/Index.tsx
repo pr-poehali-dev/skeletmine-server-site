@@ -11,57 +11,57 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const serverStats = [
-    { label: "Онлайн игроков", value: "347", icon: "Users" },
-    { label: "Максимум слотов", value: "500", icon: "Crown" },
-    { label: "Режимов игры", value: "8", icon: "Gamepad2" },
-    { label: "Дней работы", value: "1,248", icon: "Calendar" },
+    { label: "Онлайн игроков", value: "156", icon: "Users" },
+    { label: "Максимум слотов", value: "200", icon: "Crown" },
+    { label: "PvP убийств", value: "12,847", icon: "Sword" },
+    { label: "Дней хаоса", value: "892", icon: "Flame" },
   ];
 
   const gameFeatures = [
     {
-      title: "Выживание без грифов",
-      description: "Приватные территории и надежная защита от грифинга",
-      icon: "Shield",
-      color: "bg-emerald-500",
-    },
-    {
-      title: "Экономика и торговля",
-      description: "Развитая игровая экономика с аукционами и магазинами",
-      icon: "Coins",
-      color: "bg-yellow-500",
-    },
-    {
-      title: "Кастомные данжи",
-      description: "Уникальные подземелья с эксклюзивными наградами",
-      icon: "Swords",
+      title: "Полный гриф",
+      description: "Разрушай, строй и уничтожай без ограничений",
+      icon: "Pickaxe",
       color: "bg-red-500",
     },
     {
-      title: "Клановая система",
-      description: "Создавайте кланы, воюйте и покоряйте территории",
-      icon: "Flag",
-      color: "bg-purple-500",
+      title: "Hardcore PvP",
+      description: "Бои без правил, убивай или будь убитым",
+      icon: "Sword",
+      color: "bg-orange-500",
+    },
+    {
+      title: "Рейдовые кланы",
+      description: "Создавай банды для масштабных набегов",
+      icon: "Users",
+      color: "bg-gray-700",
+    },
+    {
+      title: "Анархия",
+      description: "Никаких правил, только выживание сильнейших",
+      icon: "Zap",
+      color: "bg-black",
     },
   ];
 
   const latestNews = [
     {
-      title: "Обновление 2.4: Новые данжи!",
+      title: "Война кланов: Кровавый передел!",
       date: "15 мая 2025",
-      description: "Добавлены 3 новых подземелья с уникальными боссами",
-      tag: "Обновление",
+      description: "Крупнейший рейд в истории сервера - спавн в руинах",
+      tag: "PvP",
     },
     {
-      title: "Турнир PvP - Призовой фонд 50,000₽",
+      title: "Новая PvP арена открыта!",
       date: "10 мая 2025",
-      description: "Регистрация на крупнейший турнир сервера открыта",
-      tag: "Событие",
+      description: "Сражайся в лаве и получай редкие награды",
+      tag: "Арена",
     },
     {
-      title: "Открытие нового мира - Небесные острова",
+      title: "Дюп найден и пофикшен",
       date: "5 мая 2025",
-      description: "Исследуйте загадочный мир в облаках",
-      tag: "Новость",
+      description: "Читеры наказаны, баланс восстановлен",
+      tag: "Фикс",
     },
   ];
 
@@ -72,25 +72,25 @@ const Index = () => {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1585504198199-20277593b94f?w=1920')] bg-cover bg-center opacity-20"></div>
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-6xl font-bold text-white mb-4 font-rubik">
-            🦴 <span className="text-emerald-400">Skelet</span>
+            🦴 <span className="text-red-400">Skelet</span>
             <span className="text-gray-300">Mine</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Премиальный Minecraft сервер с уникальными возможностями. Выживание,
-            PvP, кланы и многое другое ждет тебя!
+            Жестокий гриф-сервер Minecraft без правил. PvP, рейды, разрушения и
+            выживание в хаосе!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button
               size="lg"
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 text-lg"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg"
             >
               <Icon name="Play" className="mr-2" />
               Играть сейчас
             </Button>
             <div className="bg-slate-800 px-6 py-3 rounded-lg">
               <span className="text-gray-400">IP сервера: </span>
-              <span className="text-emerald-400 font-mono font-bold">
-                play.skeletmine.ru
+              <span className="text-red-400 font-mono font-bold">
+                skeletmine.20tps.ru
               </span>
             </div>
           </div>
